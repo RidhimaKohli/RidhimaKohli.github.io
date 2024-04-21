@@ -15,6 +15,26 @@ body {
     color: #444444;
 }
 
+.small-image {
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.small-image img {
+    width: 100%;
+    height: auto;
+}
+
+.row.align-items-center {
+    height: 100%;
+}
+
+.row.align-items-center>.col-md-6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 a {
     color: #1bac91;
     text-decoration: none;
@@ -408,7 +428,7 @@ h6 {
 
 #hero h1 {
     margin: 0 0 10px 0;
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 56px;
     color: #fff;
@@ -417,7 +437,7 @@ h6 {
 #hero h2 {
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 35px;
-    font-size: 24px;
+    font-size: 4rem;
 }
 
 #hero .btn-get-started {
@@ -1692,6 +1712,19 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     transition: transform 0.3s ease;
+}
+
+.intro {
+    font-size: 2rem;
+}
+
+.herotext {
+    font-size: 2rem;
+}
+
+.extra-curricular li span {
+    margin-bottom: 10px;
+    /* Add space between text and image */
 }
 
 .extra-curricular li:hover {
