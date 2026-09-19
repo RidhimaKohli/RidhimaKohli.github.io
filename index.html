@@ -26,7 +26,8 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
+    <!-- Pastel theme overrides -->
+    <link href="assets/css/custom.css" rel="stylesheet">
 
 </head>
 
@@ -34,179 +35,281 @@
 
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
-        <div class="container d-flex justify-content-between">
+        <div class="container nav-pill d-flex align-items-center justify-content-between">
 
             <div class="logo">
                 <h1>
-                    <a href="index.html"></a>
+                    <a href="#home" class="scrollto">Ridhima Kohli</a>
                 </h1>
             </div>
 
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="#home" class="active scrollto">Home</a></li>
+                    <li><a href="#education" class="scrollto">Education</a></li>
+                    <li><a href="#experience" class="scrollto">Experience</a></li>
+                    <li><a href="#portfolio" class="scrollto">Portfolio</a></li>
+                    <li><a href="#hobbies" class="scrollto">Hobbies</a></li>
+                    <li><a href="assets/Ridhima-Kohli-Resume.pdf" target="_blank" rel="noopener" class="nav-cta">Resume</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
 
         </div>
     </header>
     <!-- End Header -->
 
-    <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-        <div>
-
-
-            <div class="wrapper ">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-            </div>
-
-            <div class="wrapper container c1">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-            </div>
-
-            <div class="wrapper container c2">
-                <div id="stars"></div>
-                <div id="stars2"></div>
-                <div id="stars3"></div>
-            </div>
-
-        </div>
-        <div class="container text-center text-md-left herotext" data-aos="fade-up">
-            <h1>Hey</h1>
-            <h2>I am Ridhima Kohli</h2>
-        </div>
-    </section>
-    <!-- End Hero -->
-
     <main id="main">
 
-        <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <!-- ======= Home / Hero ======= -->
+        <section id="home">
+            <div class="blob blob-pink"></div>
+            <div class="blob blob-blue"></div>
+            <div class="blob blob-yellow"></div>
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6  small-image ">
-                        <img src="assets/img/rids.jpg " class="img-fluid " alt=" ">
-                    </div>
-                    <div class="col-md-6 text-center text-md-left intro " id="aboutme">
-                        <p>I am a Software Engineer
-                            <br> I enjoy painting, dancing, and public speaking. <br>I am always seeking new challenges to lead and inspire.</p>
-                    </div>
+                <p class="eyebrow" data-aos="fade-up">Hey, I'm</p>
+                <h1 class="hero-name" data-aos="fade-up">Ridhima Kohli</h1>
 
-                </div>
-                <!-- <div class="row justify-content-center ">
-                    <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0 ">
-
-                        <div class="icon-box " data-aos="fade-up " data-aos-delay="100 ">
-                            <img src="assets/img/kitty.png " class="img-fluid " alt=" ">
-                            <h4>Painting</h4>
-                        </div>
+                <div class="hero-row" data-aos="fade-up" data-aos-delay="100">
+                    <div class="hero-photo">
+                        <img src="assets/img/rids.jpg" class="img-fluid" alt="Ridhima Kohli">
                     </div>
-                    <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="icon-box " data-aos="fade-up " data-aos-delay="100 ">
-                            <img src="assets/img/kitty.png " class="img-fluid " alt=" ">
-                            <h4>Dancing</h4>
-
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 pt-5 pt-lg-0 ">
-                        <div class="icon-box " data-aos="fade-up " data-aos-delay="200 ">
-                            <img src="assets/img/kitty.png " class="img-fluid " alt=" ">
-                            <h4>Public Speaking</h4>
+                    <div class="hero-text">
+                        <p>I like figuring out what the problem is, what to build and why, then making it happen.
+                            <br>Right now, that means bouncing between product, strategy, and a healthy dose of curiosity.</p>
+                        <div class="hero-links">
+                            <a href="https://github.com/RidhimaKohli" target="_blank" rel="noopener" class="social-pill">
+                                <img src="assets/img/git.png" alt="GitHub"><span>GitHub</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ridhima-kohli-127642190/" target="_blank" rel="noopener" class="social-pill">
+                                <img src="assets/img/linkedin.png" alt="LinkedIn"><span>LinkedIn</span>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </section>
-        <!-- End About Section -->
+        <!-- End Home / Hero -->
 
-        <!-- End Portfolio Section -->
-        <section id="portfolio " class="portfolio section-bg ">
-            <div class="container ">
-
-                <div class="section-title " data-aos="fade-up ">
-
-                    <h2>Check out :</h2>
-                    <ul class="extra-curricular ">
-                        <li>
-                            <a href="https://github.com/RidhimaKohli" title="GitHub">
-                                <span>GitHub</span>
-                                <img src="assets/img/git.png" class="img-fluid" alt="GitHub">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.linkedin.com/in/ridhima-kohli-127642190/" title="LinkedIn">
-                                <span>LinkedIn</span>
-                                <img src="assets/img/linkedin.png" class="img-fluid" alt="LinkedIn">
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://ridswrites.wordpress.com/" title="Blog">
-                                <span>Wordpress</span>
-                                <img src="assets/img/wordpress.png" class="img-fluid" alt="Blog">
-                            </a>
-                        </li>
-                    </ul>
-
-                    <img src="assets/img/kitty2.png " class="img-fluid " alt=" ">
-                    <br>
-                    <p>On a lazy day you would find me binging my favourite shows and anime.</p>
+        <!-- ======= Education ======= -->
+        <section id="education" class="education section-pad">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Education</h2>
                 </div>
 
-                <!-- <div class="row " data-aos="fade-up ">
-          <div class="col-lg-12 d-flex justify-content-center ">
-            <ul id="portfolio-flters ">
-              <li data-filter="* " class="filter-active ">All</li>
-              <li data-filter=".filter-app ">App</li>
-              <li data-filter=".filter-card ">Card</li>
-              <li data-filter=".filter-web ">Web</li>
-            </ul>
-          </div>
-        </div> -->
+                <div class="timeline">
 
-
-
-            </div>
-
-            </div>
-        </section>
-        <!-- ======= contact Section ======= -->
-        <section id="contact " class="contact ">
-            <div class="container ">
-
-                <div class="section-title " data-aos="fade-up ">
-                    <h2>Contact</h2>
-                    <p>Ping me on LinkedIn anytime ;)</p>
-
-
-                    <div class="credits ">
-                        Thanks for visiting !<br> Au Revoir
+                                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline-dot dot-pink"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2025-27</span>
+                            <h3>MBA, PGP Young Leaders Programme</h3>
+                            <p class="timeline-org">Indian School of Business (ISB)</p>
+                            <ul class="timeline-sub">
+                                <li>President — ISB Dance Club, PGP YL (2026)</li>
+                                <li>Events Lead — ISB Tech and Innovation Club, PGP YL (2025)</li>
+                            </ul>
+                        </div>
                     </div>
+
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-dot dot-blue"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2019-23</span>
+                            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+                            <p class="timeline-org">IIT Jodhpur</p>
+                            <ul class="timeline-sub">
+                                <li>Founder &amp; Secretary — Computer Science and Engineering Society</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
-
-            </div>
-
             </div>
         </section>
-        <!-- End contact Section -->
+        <!-- End Education -->
 
-        <a href="# " class="back-to-top d-flex align-items-center justify-content-center "><i class="bi bi-arrow-up-short "></i></a>
+        <!-- ======= Experience ======= -->
+        <section id="experience" class="experience section-pad">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <span class="tag tag-blue">Experience</span>
+                    <h2>What I've worked on</h2>
+                </div>
+
+                <div class="work-grid">
+
+                    <!-- PayPal -->
+                    <div class="work-card" data-aos="fade-up">
+                        <div class="work-card-header">
+                            <div>
+                                <h3>PayPal</h3>
+                                <span class="work-meta">Global Merchant Lending Team &middot; 2023–2025</span>
+                            </div>
+                        </div>
+                        <p class="work-teaser">Worked on PayPal Working Capital, the lending product that gets small businesses fast access to capital against their PayPal sales.</p>
+                        <div class="work-full">
+                            <div class="work-full-inner">
+                                <h4>What it was</h4>
+                                <p>PayPal Working Capital — a merchant lending product that advances small businesses capital based on their payment processing history, repaid automatically as a slice of future sales.</p>
+                                <h4>What I did</h4>
+                                <p>Worked with engineering, risk, and compliance to improve how merchants qualify for and access loans. Dug into underwriting logic, helped ship changes to the application experience, and partnered with data teams to track how those changes actually played out.</p>
+                                <h4>What happened</h4>
+                                <p>[Drop in a number here — approval time reduced, application completion lift, capital disbursed, etc.]</p>
+                            </div>
+                        </div>
+                        <div class="work-toggle">Read more <i class="bi bi-chevron-down"></i></div>
+                    </div>
+
+                    <!-- Accenture -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="work-card-header">
+                            <div>
+                                <h3>Accenture Strategy</h3>
+                                <span class="work-meta">Strategy &amp; Consulting Intern &middot; 2026</span>
+                            </div>
+                        </div>
+                        <p class="work-teaser">Designed an Agentic AI playbook for Indian banks and fintechs — covering compliance, tech, and strategy.</p>
+                        <div class="work-full">
+                            <div class="work-full-inner">
+                                <h4>What it was</h4>
+                                <p>An engagement helping Indian banks and fintechs figure out where agentic AI actually fits into their business, beyond the hype.</p>
+                                <h4>What I did</h4>
+                                <p>Built a playbook covering the compliance, technology, and strategy angles of adopting agentic AI, and built client-facing demos to make the ideas concrete rather than theoretical.</p>
+                                <h4>What happened</h4>
+                                <p>[Drop in a number here — clients presented to, demos built, banks engaged, etc.]</p>
+                            </div>
+                        </div>
+                        <div class="work-toggle">Read more <i class="bi bi-chevron-down"></i></div>
+                    </div>
+
+                    <!-- Mu20 -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="work-card-header">
+                            <div>
+                                <h3>Mu20 App</h3>
+                                <span class="work-meta">2025–2026</span>
+                            </div>
+                        </div>
+                        <p class="work-teaser">Coordinated product development across engineering, design, and program teams to keep the roadmap moving.</p>
+                        <div class="work-full">
+                            <div class="work-full-inner">
+                                <h4>What it was</h4>
+                                <p>Mu20's app, built and shipped by a small cross-functional team.</p>
+                                <h4>What I did</h4>
+                                <p>Coordinated across engineering, design, and program teams — turning ideas into scoped work, unblocking the team when things stalled, and keeping releases on track.</p>
+                                <h4>What happened</h4>
+                                <p>[Drop in a number here — features shipped, release cadence, user growth, etc.]</p>
+                            </div>
+                        </div>
+                        <div class="work-toggle">Read more <i class="bi bi-chevron-down"></i></div>
+                    </div>
+
+                    <!-- EventSense -->
+                    <div class="work-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="work-card-header">
+                            <div>
+                                <h3>EventSense</h3>
+                                <span class="work-meta">Microsoft AI Unlocked &middot; 2026</span>
+                            </div>
+                            <span class="work-metric">Top 50 nationally</span>
+                        </div>
+                        <p class="work-teaser">Built an AI-driven demand forecasting prototype to help small businesses manage inventory smarter.</p>
+                        <div class="work-full">
+                            <div class="work-full-inner">
+                                <h4>What it was</h4>
+                                <p>A prototype built for Microsoft's AI Unlocked 2026 program — an AI-driven demand forecasting tool for SMB inventory management.</p>
+                                <h4>What I did</h4>
+                                <p>Built the forecasting model and prototype end-to-end, from framing the problem to demoing the solution to judges.</p>
+                                <h4>What happened</h4>
+                                <p>Ranked Top 50 nationally out of the program's applicant pool.</p>
+                            </div>
+                        </div>
+                        <div class="work-toggle">Read more <i class="bi bi-chevron-down"></i></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Experience -->
+
+        <!-- ======= Product Portfolio ======= -->
+        <section id="portfolio" class="portfolio-cta section-pad">
+            <div class="container text-center">
+                <div class="section-title" data-aos="fade-up">
+                    <span class="tag tag-green">Product Portfolio</span>
+                    <h2>Coming together, piece by piece</h2>
+                </div>
+                <div class="portfolio-panel" data-aos="fade-up">
+                    <p>I'm putting together a dedicated space for my product work. Until it's live, here's where to poke around in the meantime.</p>
+                    <a href="https://github.com/RidhimaKohli" target="_blank" rel="noopener" class="btn-pastel btn-green">
+                        <img src="assets/img/git.png" class="btn-icon" alt="GitHub"> View on GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Product Portfolio -->
+
+        <!-- ======= Hobbies ======= -->
+        <section id="hobbies" class="hobbies-section section-pad">
+            <div class="container text-center">
+                <div class="section-title" data-aos="fade-up">
+                    <span class="tag tag-pink">Off duty</span>
+                    <h2>On a lazy day...</h2>
+                </div>
+                <img src="assets/img/kitty2.png" class="img-fluid hobbies-img" data-aos="zoom-in" alt="">
+                <p data-aos="fade-up">You'd find me binging my favourite shows and anime — that, or painting, dancing, and never saying no to a mic.</p>
+                <div class="hero-links justify-content-center" data-aos="fade-up">
+                    <a href="https://ridswrites.wordpress.com/" target="_blank" rel="noopener" class="social-pill">
+                        <img src="assets/img/wordpress.png" alt="Blog"><span>Blog</span>
+                    </a>
+                </div>
+                <p class="sign-off" data-aos="fade-up">Thanks for visiting!<br>Au Revoir</p>
+            </div>
+        </section>
+        <!-- End Hobbies -->
+
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
         <!-- Vendor JS Files -->
-        <script src="assets/vendor/aos/aos.js "></script>
-        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js "></script>
-        <script src="assets/vendor/glightbox/js/glightbox.min.js "></script>
-        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js "></script>
-        <script src="assets/vendor/swiper/swiper-bundle.min.js "></script>
-        <script src="assets/vendor/php-email-form/validate.js "></script>
+        <script src="assets/vendor/aos/aos.js"></script>
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="assets/vendor/php-email-form/validate.js"></script>
 
         <!-- Template Main JS File -->
-        <script src="assets/js/main.js "></script>
+        <script src="assets/js/main.js"></script>
 
-</body>
+        <!-- Experience card expand/collapse -->
+        <script>
+            (function () {
+                var cards = document.querySelectorAll('.work-card');
+                cards.forEach(function (card) {
+                    card.setAttribute('role', 'button');
+                    card.setAttribute('tabindex', '0');
+                    card.setAttribute('aria-expanded', 'false');
 
-</html>
+                    function toggle() {
+                        var isOpen = card.classList.toggle('expanded');
+                        card.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    }
+
+                    card.addEventListener('click', toggle);
+                    card.addEventListener('keydown', function (e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            toggle();
+                        }
+                    });
+                });
+            })();
+        </script>
+
+    </main>
+
 </body>
 
 </html>

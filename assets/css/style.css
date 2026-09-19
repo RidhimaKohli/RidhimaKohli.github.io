@@ -1770,3 +1770,214 @@ section {
 .extra-curricular li span {
     font-weight: bold;
 }
+
+
+/*--------------------------------------------------------------
+# Header logo / nav (multi-page)
+--------------------------------------------------------------*/
+
+#header .logo h1 a {
+    font-size: 20px;
+}
+
+#header .navbar {
+    margin-left: 30px;
+}
+
+
+/*--------------------------------------------------------------
+# Page intro (Work & Projects header)
+--------------------------------------------------------------*/
+
+.page-intro {
+    margin-top: 70px;
+    padding: 70px 0 40px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .page-intro {
+        margin-top: 60px;
+    }
+}
+
+.page-intro h2 {
+    font-size: 34px;
+    font-weight: 300;
+    color: #21413c;
+    margin-bottom: 12px;
+}
+
+.page-intro p {
+    color: #777;
+    font-size: 16px;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------
+# Work & Projects cards
+--------------------------------------------------------------*/
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+    gap: 30px;
+}
+
+.work-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.work-card:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-3px);
+}
+
+.work-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.work-card h3 {
+    color: #21413c;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.work-card .work-meta {
+    color: #1bac91;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.work-metric {
+    background: #eff7f6;
+    color: #1bac91;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.work-teaser {
+    color: #666;
+    margin: 15px 0 0 0;
+    line-height: 1.6;
+}
+
+.work-full {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.work-card.expanded .work-full {
+    max-height: 700px;
+}
+
+.work-full-inner {
+    padding-top: 18px;
+    margin-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.work-full h4 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #1bac91;
+    margin: 14px 0 5px 0;
+}
+
+.work-full h4:first-child {
+    margin-top: 0;
+}
+
+.work-full p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.work-toggle {
+    font-size: 13px;
+    color: #1bac91;
+    font-weight: 600;
+    margin-top: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.work-toggle i {
+    transition: transform 0.3s;
+}
+
+.work-card.expanded .work-toggle i {
+    transform: rotate(180deg);
+}
+
+
+/*--------------------------------------------------------------
+# Positions
+--------------------------------------------------------------*/
+
+.positions {
+    background-color: #DDB0FF;
+}
+
+.positions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.positions-list li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 6px 20px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(33, 65, 60, 0.2);
+}
+
+.positions-list li:last-child {
+    border-bottom: none;
+}
+
+.position-role {
+    font-weight: 700;
+    color: #21413c;
+}
+
+.position-org {
+    color: #21413c;
+    opacity: 0.75;
+    font-size: 14px;
+    margin-right: auto;
+}
+
+.position-year {
+    color: #21413c;
+    opacity: 0.6;
+    font-size: 14px;
+    white-space: nowrap;
+}

@@ -1,0 +1,523 @@
+/*--------------------------------------------------------------
+# Pastel theme — overrides & new sections
+# Loaded after style.css. Palette: pink / blue / yellow / green.
+--------------------------------------------------------------*/
+
+:root {
+    --pink: #FFD9EC;
+    --pink-deep: #FF9EC7;
+    --blue: #D3ECFF;
+    --blue-deep: #8FCBFF;
+    --yellow: #FFF3B0;
+    --yellow-deep: #FFDD57;
+    --green: #D3F5E3;
+    --green-deep: #8FE3B8;
+    --ink: #2E2A3A;
+    --ink-soft: #726C82;
+    --paper: #FFFCF7;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", "Raleway", sans-serif;
+}
+
+a {
+    color: var(--ink);
+}
+
+a:hover {
+    color: var(--pink-deep);
+}
+
+.section-pad {
+    padding: 90px 0;
+}
+
+.tag {
+    display: inline-block;
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: var(--ink);
+}
+
+.tag-yellow { background: var(--yellow); }
+.tag-pink { background: var(--pink); }
+.tag-blue { background: var(--blue); }
+.tag-green { background: var(--green); }
+
+.section-title h2 {
+    font-weight: 600;
+    color: var(--ink);
+}
+
+
+/*--------------------------------------------------------------
+# Header / Nav
+--------------------------------------------------------------*/
+
+#header {
+    background: transparent;
+    height: auto;
+    padding: 18px 0;
+}
+
+.nav-pill {
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px 10px 8px 26px;
+    box-shadow: 0 6px 24px rgba(46, 42, 58, 0.1);
+}
+
+#header .logo h1 a {
+    color: var(--ink);
+    font-size: 18px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.navbar a,
+.navbar a:focus {
+    color: var(--ink-soft);
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+    color: var(--ink);
+}
+
+.navbar > ul > li > a:before {
+    background-color: var(--pink-deep);
+}
+
+.navbar .nav-cta {
+    background: var(--ink);
+    color: #fff !important;
+    padding: 9px 20px;
+    border-radius: 50px;
+}
+
+.navbar .nav-cta:before {
+    display: none;
+}
+
+.navbar .nav-cta:hover {
+    background: var(--pink-deep);
+    color: var(--ink) !important;
+}
+
+.mobile-nav-toggle {
+    color: var(--ink);
+}
+
+.navbar-mobile .mobile-nav-toggle {
+    color: #fff;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+    color: var(--ink);
+}
+
+.back-to-top {
+    background: var(--pink-deep);
+}
+
+.back-to-top:hover {
+    background: var(--ink);
+}
+
+
+/*--------------------------------------------------------------
+# Home / Hero
+--------------------------------------------------------------*/
+
+#home {
+    position: relative;
+    overflow: hidden;
+    padding: 170px 0 100px 0;
+}
+
+.blob {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.7;
+}
+
+.blob-pink {
+    width: 320px;
+    height: 320px;
+    background: var(--pink);
+    top: -100px;
+    left: -100px;
+}
+
+.blob-blue {
+    width: 260px;
+    height: 260px;
+    background: var(--blue);
+    top: 140px;
+    right: -80px;
+}
+
+.blob-yellow {
+    width: 200px;
+    height: 200px;
+    background: var(--yellow);
+    bottom: -70px;
+    left: 38%;
+}
+
+#home .container {
+    position: relative;
+    z-index: 1;
+}
+
+.eyebrow {
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.hero-name {
+    font-size: 60px;
+    font-weight: 700;
+    margin: 0 0 40px 0;
+    color: var(--ink);
+}
+
+.hero-row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-photo {
+    flex: 0 0 190px;
+    width: 190px;
+    height: 190px;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 14px 34px rgba(46, 42, 58, 0.18);
+    border: 6px solid #fff;
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text p {
+    font-size: 19px;
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 0;
+}
+
+.hero-links {
+    display: flex;
+    gap: 14px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+}
+
+.social-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 4px 16px rgba(46, 42, 58, 0.1);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--ink);
+    transition: 0.3s;
+}
+
+.social-pill img {
+    width: 18px;
+    height: 18px;
+}
+
+.social-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(46, 42, 58, 0.16);
+    color: var(--ink);
+}
+
+@media (max-width: 768px) {
+    #home {
+        padding: 150px 0 70px 0;
+    }
+    .hero-name {
+        font-size: 40px;
+    }
+    .hero-row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-links {
+        justify-content: center;
+    }
+    /* Keep decorative blobs from geometrically overhanging the viewport edge
+       on narrow screens — an off-canvas absolute-positioned blob (even one
+       visually clipped by an overflow:hidden ancestor) can still inflate the
+       browser's computed layout-viewport width and push fixed-position
+       elements (like the nav pill) wider than the visible screen. */
+    .blob-pink {
+        width: 160px;
+        height: 160px;
+        top: 0;
+        left: 0;
+    }
+    .blob-blue {
+        width: 140px;
+        height: 140px;
+        top: 110px;
+        right: 0;
+    }
+    .blob-yellow {
+        width: 120px;
+        height: 120px;
+        bottom: 0;
+        left: 35%;
+    }
+}
+
+
+/*--------------------------------------------------------------
+# Education timeline
+--------------------------------------------------------------*/
+
+.education {
+    background: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 720px;
+    margin: 0 auto;
+    padding-left: 42px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 14px;
+    top: 6px;
+    bottom: 6px;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, var(--blue-deep), var(--pink-deep));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -42px;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 4px solid var(--paper);
+    background: var(--blue-deep);
+}
+
+.timeline-dot.dot-pink {
+    background: var(--pink-deep);
+}
+
+.timeline-content {
+    background: var(--paper);
+    border-radius: 18px;
+    padding: 26px 28px;
+    box-shadow: 0 4px 22px rgba(46, 42, 58, 0.06);
+}
+
+.timeline-year {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--yellow);
+    padding: 4px 12px;
+    border-radius: 50px;
+    margin-bottom: 12px;
+}
+
+.timeline-content h3 {
+    font-size: 19px;
+    margin: 0 0 2px 0;
+    color: var(--ink);
+}
+
+.timeline-org {
+    color: var(--ink-soft);
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.timeline-sub {
+    list-style: none;
+    padding: 12px 0 0 0;
+    margin: 0;
+    border-top: 1px dashed rgba(46, 42, 58, 0.15);
+}
+
+.timeline-sub li {
+    color: var(--ink-soft);
+    font-size: 13.5px;
+    padding: 4px 0 4px 18px;
+    position: relative;
+}
+
+.timeline-sub li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: var(--ink-soft);
+}
+
+
+/*--------------------------------------------------------------
+# Experience cards (pastel accents on the shared .work-card component)
+--------------------------------------------------------------*/
+
+.experience {
+    background: var(--paper);
+}
+
+.work-card {
+    border-top: 5px solid var(--blue-deep);
+}
+
+.work-card:nth-child(4n+1) { border-top-color: var(--pink-deep); }
+.work-card:nth-child(4n+2) { border-top-color: var(--blue-deep); }
+.work-card:nth-child(4n+3) { border-top-color: var(--yellow-deep); }
+.work-card:nth-child(4n+4) { border-top-color: var(--green-deep); }
+
+.work-metric {
+    background: var(--paper);
+    color: var(--ink);
+}
+
+.work-toggle {
+    color: var(--ink-soft);
+}
+
+.work-card.expanded .work-toggle {
+    color: var(--ink);
+}
+
+.work-full h4 {
+    color: var(--ink-soft);
+}
+
+
+/*--------------------------------------------------------------
+# Product Portfolio
+--------------------------------------------------------------*/
+
+.portfolio-cta {
+    background: #fff;
+}
+
+.portfolio-panel {
+    max-width: 620px;
+    margin: 0 auto;
+    background: var(--paper);
+    border-radius: 24px;
+    padding: 50px 40px;
+    border: 3px dashed var(--green-deep);
+}
+
+.portfolio-panel p {
+    color: var(--ink-soft);
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.btn-pastel {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-green {
+    background: var(--green-deep);
+    color: #123524;
+}
+
+.btn-green:hover {
+    background: #6fd6a3;
+    color: #123524;
+    transform: translateY(-2px);
+}
+
+
+/*--------------------------------------------------------------
+# Hobbies
+--------------------------------------------------------------*/
+
+.hobbies-section {
+    background: #fff;
+}
+
+.hobbies-img {
+    max-width: 150px;
+    margin: 0 auto 20px auto;
+}
+
+.hobbies-section p {
+    color: var(--ink-soft);
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.sign-off {
+    margin-top: 34px !important;
+    font-size: 14px;
+    color: var(--ink-soft) !important;
+}
